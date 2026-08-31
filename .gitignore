@@ -1,0 +1,23 @@
+# Abai folder node_modules di manapun posisinya
+**/node_modules/
+node_modules/
+frontend/node_modules/
+
+# Abai file hasil build / dist
+**/dist/
+**/build/
+
+# Abai file arsip zip
+*.zip
+**/*.zip
+
+# Abai file rahasia & sistem
+.env
+*.env
+.DS_Store
+**/.DS_Store
+
+# Abai database lokal atau binary Go jika ada
+*.db
+*.sqlite
+backend/backend.exe
