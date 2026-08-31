@@ -1,4 +1,4 @@
-<div align="center">
+div align="center">
 
 # 🔔 School Bell Web Application
 ### *System Management & Automation for School Bells*
@@ -21,27 +21,26 @@
 - [Fitur Unggulan](#-fitur-unggulan)
 - [Arsitektur & Tech Stack](#-arsitektur--tech-stack)
 - [Struktur Folder](#-struktur-folder)
-- [Prasyarat Sistem](#-prasyarat-sistem)
-- [Panduan Instalasi & Penggunaan](#-panduan-instalasi--penggunaan)
+- [Prasyarat & Instalasi](#-prasyarat--instalasi)
 - [Dokumentasi API](#-dokumentasi-api)
-- [Kontribusi](#-kontribusi)
+- [Pengembang](#-pengembang)
 
 ---
 
-##  Fitur Unggulan
+## ✨ Fitur Unggulan
 
 | Fitur | Deskripsi |
 | :--- | :--- |
-|  **Multi-Mode Bel** | Mendukung perpindahan mode jadwal secara instan: `REGULER`, `RAMADAN`, `UJIAN_X`, `UJIAN_XI`, dan `UJIAN_XII`. |
-|  **Global Bell Status** | Fitur **Pause/Active** untuk menghentikan seluruh pengoperasian bel otomatis sewaktu-waktu tanpa menghapus jadwal. |
-|  **Audio Override & Stop** | Tombol kontrol cepat untuk menghentikan suara bel yang sedang berputar di area sekolah. |
-|  **Pengaturan Per Hari** | Visualisasi dan manajemen jadwal bel terpisah dari Hari Senin hingga Minggu. |
-|  **Real-time Clock & Sync** | Sinkronisasi jam digital presisi tinggi dan otomatis memperbarui data dari backend secara berkala. |
-|  **CRUD Schedule Management** | Pengisian form jadwal interaktif dengan fitur auto-scroll untuk pengeditan data. |
+| 🎛 **Multi-Mode Bel** | Mendukung perpindahan mode jadwal secara instan: `REGULER`, `RAMADAN`, `UJIAN_X`, `UJIAN_XI`, dan `UJIAN_XII`. |
+| ⏸ **Global Bell Status** | Fitur **Pause/Active** untuk menghentikan seluruh pengoperasian bel otomatis sewaktu-waktu tanpa menghapus jadwal. |
+| 🛑 **Audio Override & Stop** | Tombol kontrol cepat untuk menghentikan suara bel yang sedang berputar di area sekolah. |
+| 📅 **Pengaturan Per Hari** | Visualisasi dan manajemen jadwal bel terpisah dari Hari Senin hingga Minggu. |
+| ⏰ **Real-time Clock & Sync** | Sinkronisasi jam digital presisi tinggi dan otomatis memperbarui data dari backend secara berkala. |
+| 📝 **CRUD Schedule Management** | Pengisian form jadwal interaktif dengan fitur auto-scroll untuk pengeditan data. |
 
 ---
 
-##  Arsitektur & Tech Stack
+## 🛠 Arsitektur & Tech Stack
 
 ### Frontend
 - **Framework**: React.js (Vite)
@@ -56,7 +55,7 @@
 
 ---
 
-##  Struktur Folder
+## 📁 Struktur Folder
 
 ```text
 bel/
@@ -68,7 +67,7 @@ bel/
 │   ├── 📁 scheduler/       # Engine otomatisasi waktu bel
 │   └── main.go             # Entrypoint server Go
 ├── 📁 frontend/            # Source code UI React
-│   ├── 📁 public/ & assets/ # Asset gambar & logo
+│   ├── 📁 public/ & assets/# Asset gambar & logo
 │   └── 📁 src/
 │       ├── 📁 components/  # Header, ModeSelector, ScheduleTable, dsb.
 │       ├── 📁 services/    # Integration layer API
@@ -77,29 +76,11 @@ bel/
 │       └── main.jsx        # Entrypoint React
 ├── nyalain_bel.bat         # One-click startup script (Windows)
 └── README.md               # Dokumentasi project
-
-
-## Prasyarat Sistem
-- **Sebelum menjalankan project ini, pastikan komputer Anda telah terinstall:**
-- **Node.js (v16.x atau terbaru)**
-- ** Go (Golang) (v1.18 atau terbaru)**
-- **Git CLI**
-
-### Panduan Instalasi & Penggunaan
-** 1. Clone Repository**
-Bash
-git clone [https://github.com/tghfrmnsyhhh/school_bell_webapp.git](https://github.com/tghfrmnsyhhh/school_bell_webapp.git)
+🚀 Prasyarat & Instalasi📌 Prasyarat SistemSebelum menjalankan project ini, pastikan komputer Anda telah terinstall:Node.js (v16.x atau terbaru)Go (Golang) (v1.18 atau terbaru)Git CLI🛠 Panduan Instalasi & Penggunaan1. Clone RepositoryBashgit clone [https://github.com/tghfrmnsyhhh/school_bell_webapp.git](https://github.com/tghfrmnsyhhh/school_bell_webapp.git)
 cd school_bell_webapp
-
-**2. Jalankan Backend (Go)**
-Bash
-cd backend
+2. Jalankan Backend (Go)Bashcd backend
 go run main.go
-Server backend akan berjalan secara default di http://localhost:8080 (atau port yang terkonfigurasi).
-
-**3. Jalankan Frontend (React)**
-Buka terminal baru di direktori root project: 
-
-cd frontend
+Server backend akan berjalan secara default di http://localhost:8080 (atau port yang terkonfigurasi).3. Jalankan Frontend (React)Buka terminal baru di direktori root project:Bashcd frontend
 npm install
 npm run dev
+🔌 Dokumentasi APIMethodEndpointDeskripsiGET/api/settingsMengambil setting mode aktif & status bel (active/paused).POST/api/settingsMengubah setting mode atau status bel.GET/api/schedulesMengambil seluruh daftar jadwal bel.POST/api/schedulesMenambahkan jadwal bel baru.PUT/api/schedules/:idMemperbarui jadwal bel berdasarkan ID.DELETE/api/schedules/:idMenghapus jadwal bel berdasarkan ID.POST/api/stop-bellMenghentikan audio bel yang sedang diputar.🧑‍💻 PengembangDeveloped with ❤️ by Teguh FirmansyahFrontend Developer | React.js | JavaScript | Web Enthusiast
