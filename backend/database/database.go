@@ -13,10 +13,10 @@ var DB *gorm.DB
 
 func InitDB() {
 	username := "root"
-	password := "rplmantap123"
+	password := ""
 	host := "127.0.0.1"
 	port := "3306"
-	databaseName := "simpel_bell" // Pastikan schema ini sudah kamu "Create Schema" di MySQL Workbench
+	databaseName := "" 
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local", username, password, host, port, databaseName)
 
