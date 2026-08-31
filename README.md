@@ -21,32 +21,32 @@
 
 ## 📑 Daftar Isi
 
-* [✨ Fitur Unggulan](#-fitur-unggulan)
-* [🛠️ Arsitektur & Tech Stack](#️-arsitektur--tech-stack)
-* [📁 Struktur Folder](#-struktur-folder)
-* [🚀 Prasyarat & Instalasi](#-prasyarat--instalasi)
-* [🔌 Dokumentasi API](#-dokumentasi-api)
-* [🧑‍💻 Pengembang](#-pengembang)
+* [Fitur Unggulan](#-fitur-unggulan)
+* [Arsitektur & Tech Stack](#️-arsitektur--tech-stack)
+* [Struktur Folder](#-struktur-folder)
+* [Prasyarat & Instalasi](#-prasyarat--instalasi)
+* [Dokumentasi API](#-dokumentasi-api)
+* [Pengembang](#-pengembang)
 
 ---
 
-## ✨ Fitur Unggulan
+## Fitur Unggulan
 
 | Fitur                           | Deskripsi                                                                                                                              |
 | :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------- |
-| 🎛️ **Multi-Mode Bel**          | Mendukung perpindahan mode jadwal secara instan seperti `REGULER`, `RAMADAN`, `UJIAN_X`, `UJIAN_XI`, dan `UJIAN_XII`.                  |
-| ⏸️ **Global Bell Status**       | Menyediakan kontrol **Active / Pause** untuk menghentikan seluruh pengoperasian bel otomatis tanpa menghapus jadwal yang telah dibuat. |
-| 🛑 **Audio Override & Stop**    | Tombol kontrol cepat untuk menghentikan suara bel yang sedang diputar.                                                                 |
-| 📅 **Pengaturan Per Hari**      | Pengelolaan jadwal bel berdasarkan hari, mulai dari Senin hingga Minggu.                                                               |
-| ⏰ **Real-Time Clock & Sync**    | Menampilkan jam digital secara real-time dan melakukan sinkronisasi data dengan backend secara berkala.                                |
-| 📝 **CRUD Schedule Management** | Menyediakan fitur untuk menambah, melihat, mengubah, dan menghapus jadwal bel dengan form interaktif.                                  |
-| 📱 **Responsive Interface**     | Antarmuka dirancang agar dapat digunakan dengan nyaman pada berbagai ukuran layar.                                                     |
+| **Multi-Mode Bel**          | Mendukung perpindahan mode jadwal secara instan seperti `REGULER`, `RAMADAN`, `UJIAN_X`, `UJIAN_XI`, dan `UJIAN_XII`.                  |
+| **Global Bell Status**       | Menyediakan kontrol **Active / Pause** untuk menghentikan seluruh pengoperasian bel otomatis tanpa menghapus jadwal yang telah dibuat. |
+| **Audio Override & Stop**    | Tombol kontrol cepat untuk menghentikan suara bel yang sedang diputar.                                                                 |
+| **Pengaturan Per Hari**      | Pengelolaan jadwal bel berdasarkan hari, mulai dari Senin hingga Minggu.                                                               |
+| **Real-Time Clock & Sync**    | Menampilkan jam digital secara real-time dan melakukan sinkronisasi data dengan backend secara berkala.                                |
+| **CRUD Schedule Management** | Menyediakan fitur untuk menambah, melihat, mengubah, dan menghapus jadwal bel dengan form interaktif.                                  |
+| **Responsive Interface**     | Antarmuka dirancang agar dapat digunakan dengan nyaman pada berbagai ukuran layar.                                                     |
 
 ---
 
-## 🛠️ Arsitektur & Tech Stack
+##  Arsitektur & Tech Stack
 
-### 🎨 Frontend
+###  Frontend
 
 | Teknologi           | Penggunaan                                        |
 | :------------------ | :------------------------------------------------ |
@@ -57,7 +57,7 @@
 | **LocalStorage**    | Penyimpanan data tertentu pada sisi client        |
 | **Custom Hooks**    | Pengelolaan state dan reusable logic              |
 
-### ⚙️ Backend
+### Backend
 
 | Teknologi                      | Penggunaan                                              |
 | :----------------------------- | :------------------------------------------------------ |
@@ -67,7 +67,7 @@
 | **Go Scheduler / Time Ticker** | Menjalankan bel berdasarkan waktu yang telah ditentukan |
 | **JSON / SQLite**              | Media penyimpanan data                                  |
 
-### 🔄 Arsitektur Sistem
+### Arsitektur Sistem
 
 ```text
 ┌─────────────────────────┐
@@ -100,7 +100,7 @@
 
 ---
 
-## 📁 Struktur Folder
+## Struktur Folder
 
 ```text
 school_bell_webapp/
@@ -129,9 +129,9 @@ school_bell_webapp/
 
 ---
 
-## 🚀 Prasyarat & Instalasi
+## Prasyarat & Instalasi
 
-### 📌 Prasyarat Sistem
+### Prasyarat Sistem
 
 Pastikan perangkat telah memiliki software berikut:
 
@@ -190,7 +190,7 @@ Frontend biasanya dapat diakses melalui:
 http://localhost:5173
 ```
 
-### ⚡ Menjalankan Menggunakan Windows Script
+### Menjalankan Menggunakan Windows Script
 
 Project juga menyediakan file:
 
@@ -202,7 +202,7 @@ File tersebut dapat digunakan untuk membantu menjalankan aplikasi pada lingkunga
 
 ---
 
-## 🔌 Dokumentasi API
+##  Dokumentasi API
 
 Base URL:
 
@@ -217,7 +217,7 @@ http://localhost:8080
 |  `GET` | `/api/settings` | Mengambil mode aktif dan status bel (`active` / `paused`). |
 | `POST` | `/api/settings` | Mengubah mode atau status bel.                             |
 
-### 📅 Schedules
+### Schedules
 
 |  Method  | Endpoint             | Deskripsi                            |
 | :------: | :------------------- | :----------------------------------- |
@@ -232,7 +232,7 @@ http://localhost:8080
 | :----: | :--------------- | :------------------------------------------ |
 | `POST` | `/api/stop-bell` | Menghentikan audio bel yang sedang diputar. |
 
-### 📌 Contoh Request
+###  Contoh Request
 
 #### Mengambil Jadwal
 
@@ -261,7 +261,7 @@ Contoh body:
 
 ---
 
-## 🔄 Alur Kerja Sistem
+## Alur Kerja Sistem
 
 ```text
 User
@@ -290,12 +290,12 @@ Go Backend
  └─── Menjalankan Scheduler
  │
  ▼
-🔔 School Bell
+ School Bell
 ```
 
 ---
 
-## 🎯 Tujuan Project
+## Tujuan Project
 
 School Bell Web Application dikembangkan untuk membantu sekolah dalam mengelola sistem bel secara **terpusat, otomatis, dan fleksibel**.
 
@@ -303,7 +303,7 @@ Sistem ini memungkinkan administrator untuk mengatur jadwal bel berdasarkan kebu
 
 ---
 
-## 🧑‍💻 Pengembang
+## Pengembang
 
 <div align="center">
 
@@ -317,6 +317,6 @@ Developed with ❤️ for educational technology.
 
 ---
 
-## 📄 License
+## License
 
 Project ini dikembangkan untuk kebutuhan **internal/edukasi dan pengembangan sistem sekolah di SMK Perguruan CIKINI**.
